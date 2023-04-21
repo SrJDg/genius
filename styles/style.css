@@ -1,0 +1,143 @@
+
+
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Cabin+Condensed:wght@400;500;600 & family= Crete+Round:ital@1 & família= Yanone+Kaffeesatz:wght@200;400 & display=swap');
+
+ :root {
+    --cor--primaria: #222831;
+    --cor--segundaria:#393E46;
+    --cor--terciaria:#FFD369;
+
+ }
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+body{
+ box-sizing: border-box ;
+background-color:var(--cor--primaria);
+color:rgb(255, 255, 255);
+
+}
+
+.destaque{
+    color:var(--cor--terciaria);
+}
+
+.menu{
+    padding: 2% 0 0 15%;
+background-color: var(--cor--primaria);
+
+}
+
+.link_m{
+font-family: 'montserrat', sans-serif;
+font-size: 1.5rem;
+font-weight: 600;
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+.menu_n{
+    display: flex;
+    gap: 80px;
+
+}
+
+.p1{
+    color: var(--cor--terciaria);
+}
+
+.pai{
+    padding: 5% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.filho{
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.título{
+    font-size: 2.25rem;;
+font-family:'Abril Fatface', cursiva;
+ }
+
+.texto{
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', cursiva;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.link1{
+
+display: flex;
+justify-content: center;
+gap: 16px;
+    border: 2px outset var(--cor--segundaria);
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: rgb(214, 204, 204);
+    font-family:'Abril Fatface', cursiva;
+}
+
+.link1:hover{
+    background-color: var(--cor--segundaria)
+}
+
+.subtitulo{
+    font-family:  'Yanone Kaffeesatz',sem serifa;
+    font-weight: 400; }
+
+.imagem{
+ width: 50%;
+}
+
+
+.rodape{
+    padding: 24px;
+    color: #ffff;
+    background-color:var(--cor--segundaria);
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+   }
+
+   @media (max-width: 800px) {
+      
+    .menu{
+        padding: 10%;
+    }
+
+    .menu_n{
+        justify-content: center;
+    }
+
+    .pai {
+        flex-direction: column-reverse;
+        padding: 5%;
+       }
+    
+       .filho{
+        width: auto;
+       }
+   }
